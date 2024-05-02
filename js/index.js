@@ -16,6 +16,6 @@ btnSignup.addEventListener("click", function () {
 
 
 function entrar(){
-    window.location.href = './pages/home.html';
-    alert("Deu certo")
+    window.location.href = './pages/home.html';   
+    alert("Login efetuado com sucesso!")
 }
