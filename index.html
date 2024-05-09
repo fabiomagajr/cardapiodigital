@@ -16,27 +16,28 @@
             <div class="first-column">
                 <img src="./assets/img/LOGOTIPO PRINCIPAL.png" alt="">
                 <h2 class="title title-primary">Seja Bem-Vindo!</h2>
-                <p class="description description-primary">Para se manter conectado</p>
-                <p class="description description-primary">por favor, faça login com suas credenciais</p>
-                <button id="signin" class="btn btn-primary">Entrar</button>
+                <p class="description description-primary">Para criar uma nova conta</p>
+                <p class="description description-primary">clique em "cadastrar"</p>
+                <button id="signin" class="btn btn-primary">Cadastrar</button>
             </div>    
             <div class="second-column">
-                <h2 class="title title-second">Criar nova conta</h2>
+                <h2 class="title title-second">Fazer Login</h2>
+                
                  <div class="social-media">
                     <ul class="list-social-media">
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-facebook-f"></i>        
+                                <i class="fab fa-facebook-f" onclick="indisponivel()"></i>        
                             </li>
                         </a>
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-google-plus-g" onclick="indisponivel()"></i>
                             </li>
                         </a>
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-linkedin-in" onclick="indisponivel()"></i>
                             </li>
                         </a>
                     </ul>
@@ -44,69 +45,75 @@
                 <p class="description description-second">insira abaixo suas credenciais:</p>
                 <form class="form">
                     <label class="label-input" for="">
-                        <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Seu nome">
-                    </label>
-                    
-                    <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Login">
+                        <input type="text" placeholder="Login" id="lgn-usr" required>
                     </label>
-                    
+                
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" id="lgn-pss" required>
                     </label>
+                
+                    <a class="password" href="#">esqueceu sua senha?</a>
                     
                     
-                    <button class="btn btn-second">cadastrar</button>        
+                    <button class="btn btn-second" onclick="login()">Entrar</button>        
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
         <div class="content second-content">
             <div class="first-column">
                 <img src="./assets/img/LOGOTIPO PRINCIPAL.png" alt="">
-                <h2 class="title title-primary">Crie sua conta!</h2>
-                <p class="description description-primary">Insira suas credenciais</p>
-                <p class="description description-primary">e entre nessa!</p>
-                <button id="signup" class="btn btn-primary">Criar</button>
+                <h2 class="title title-primary">Já possui uma conta?</h2>
+                <p class="description description-primary">Clique abaixo</p>
+                <p class="description description-primary">para fazer login</p>
+                <button id="signup" class="btn btn-primary">Login</button>
             </div>
             <div class="second-column">
-                <h2 class="title title-second">Faça seu login</h2>
+                <h2 class="title title-second">Crie sua conta</h2>
                 <div class="social-media">
+                    
                     <ul class="list-social-media">
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-facebook-f" onclick="indisponivel()"></i>
                             </li>
                         </a>
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-google-plus-g" onclick="indisponivel()"></i>
                             </li>
                         </a>
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-linkedin-in" onclick="indisponivel()"></i>
                             </li>
                         </a>
                     </ul>
                 </div> 
-                <p class="description description-second">digite suas credenciais abaixo:</p>
-                <form class="form">
-                
+                <p class="description description-second">Insira seus dados abaixo:</p>
+                <form class="form" id="userForm">
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Seu nome">
+                    </label>
+                    
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Login" required>
+                        <input type="text" id="username" placeholder="Login">
                     </label>
-                
+                    
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" required>
-                    </label>
-                
-                    <a class="password" href="#">esqueceu sua senha?</a>
-                    <button class="btn btn-second" onclick="entrar()">entrar</button>
+                        <input type="password" id="password" placeholder="Senha">
+                    </label>                
+                    
+                    <button class="btn btn-second" onclick="indisponivel()">Cadastrar</button>
+                    
+                    <!--
+                    <input type="submit" value="Cadastrar" class="btn btn-second">
+                    -->
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->

@@ -31,6 +31,44 @@ html{
     padding-left: 30rem;
 
 }
+.content .list-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .list-menu li a{
+    
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+
+}
+.content .list-menu li a:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+
+}
+.content .cart{
+    justify-content: end;
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+}
+.content .cart:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+}
+
+
+
+
 
 .first-section{
     height: 100vh;
@@ -39,6 +77,15 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgba(29,29,29,0.4),rgba(29,29,29,0.4)),url(../assets/img/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+.first-section .logo-central{
+    max-width: 200px;
 }
 
 .logo{
@@ -58,6 +105,72 @@ html{
     font-size: 1.6rem;
 }
 
-.list-menu a{
-    color: white;
+.conteudo-principal{
+    text-align: center;
 }
+
+.reservar, .montar {
+    font-size: 17px;
+    background: rgba(29,29,29,0.4);
+    border: none;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .reservar::before,.montar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: 0.5s ease;
+  }
+  
+  .reservar:hover,.montar:hover {
+    color: #ffc506;
+    transition-delay: 0.5s;
+  }
+  
+  .reservar:hover::before,.montar:hover::before {
+    width: 100%;
+  }
+  
+  .reservar::after,.montar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .reservar:hover::after,.montar:hover::after  {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+  
+  .titles{    
+        font-family: "Architects Daughter", cursive;
+        font-weight: 400;
+        font-style:normal;     
+        color: white;
+  }
+ .main{
+    font-size: 40px;
+  }
+ .sub{
+    font-size: 25px;
+  }
+
+  /*anotação atualizada heheheheh*/
